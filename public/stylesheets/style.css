@@ -3,6 +3,43 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+
+.messageContainer {
+  border-left: rgb(226, 184, 128) 5px solid;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.messageBoard {
+  margin-bottom: 40px;
+}
+
+.messageInfoContainer {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.messageText {
+  font-size: 18px;
+  margin: 0 0 10px 10px;
+}
+
+.addMessageButton {
+  background-color: rgb(226, 184, 128);
+  color: black;
+  margin-left: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 20px 5px 20px;
+  border-radius: 20px;
+  border: 2px black solid;
 }

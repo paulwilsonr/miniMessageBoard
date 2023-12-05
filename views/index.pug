@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  div(class='messageBoard')
+    each val, index in messages
+      div(class='messageContainer')
+        div(class='messageInfoContainer')
+          p(class='username')= messages[index].user
+          p= messages[index].added
+        p(class='messageText')= messages[index].text
+
+  a(href="/new" class='addMessageButton') Add Message
